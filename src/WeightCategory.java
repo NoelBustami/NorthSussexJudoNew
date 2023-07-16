@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class WeightCategory {
 
@@ -35,13 +34,8 @@ public class WeightCategory {
         this.weightCategory = weightCategory;
     }
 
-
-    public WeightCategory() {
+    public void checkWeightCategory(double userWeight) {
         String weightCategory;
-
-        System.out.println("Please enter your weight in Kg");
-        Scanner weightInput = new Scanner(System.in);
-        double userWeight = weightInput.nextDouble();
 
         if (userWeight > heavyWeight) {
             weightCategory = "Heavyweight";

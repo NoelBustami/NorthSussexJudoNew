@@ -1,4 +1,4 @@
-public class ElitePlan implements TrainingPlan{
+public class ElitePlan extends TrainingPlan {
 
     private String namePlan;
     private String numOfHours;

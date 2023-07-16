@@ -1,4 +1,4 @@
-public class BeginnerPlan implements TrainingPlan{
+public class BeginnerPlan extends TrainingPlan {
     private String namePlan;
     private final double cost;
 
@@ -6,7 +6,6 @@ public class BeginnerPlan implements TrainingPlan{
         this.cost = 25;
         int numOfSession = 2;
     }
-
     @Override
     public double calculateFee() {
         return numOfWeek * this.cost;

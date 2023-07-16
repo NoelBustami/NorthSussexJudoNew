@@ -1,25 +1,18 @@
-import java.util.Scanner;
 
-public class Competition implements TrainingPlan{
+public class Competition extends TrainingPlan {
 
-    private String name;
-    private double cost;
-    private int amount;
+    private int numOfCompetition;
 
-    public Competition(){
-        System.out.println("How many competition you want to enter?");
-        Scanner compete = new Scanner(System.in);
-        this.amount = compete.nextInt();
-        this.cost = 22.00;
+    public Competition() {
+        // do nothing
+    }
+
+    public Competition(int numOfCompetition) {
+        this.numOfCompetition = numOfCompetition;
     }
 
     @Override
     public double calculateFee() {
-        return this.amount * this.cost;
-    }
-
-    @Override
-    public String toString() {
-        return this.name;
+        return numOfCompetition * 22.0;
     }
 }

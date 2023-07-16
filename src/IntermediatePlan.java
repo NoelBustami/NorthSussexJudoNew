@@ -1,4 +1,4 @@
-public class IntermediatePlan implements TrainingPlan{
+public class IntermediatePlan extends TrainingPlan{
 
     private String namePlan;
     private String numOfHours;
